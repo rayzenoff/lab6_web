@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Имя студента</th>
+            <th>Оценка</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.grade }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
